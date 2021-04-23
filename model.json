@@ -1,0 +1,208 @@
+[
+    {
+        "type":"categories",
+        "title":null,
+        "items":[
+            {
+                "name":"Сад",
+                "price":null
+            },
+            {
+                "name":"Освещение",
+                "price":null
+            },
+            {
+                "name":"Инструменты",
+                "price":null
+            },
+            {
+                "name":"Строймате-риалы",
+                "price":null
+            },
+            {
+                "name":"Декор",
+                "price":null
+            }
+        ]
+    },
+    {
+        "type":"specialOffers",
+        "title":"Предложение ограничено",
+        "items":[
+            {
+                "name":"vulputate nonummy maecenas tincidunt lacus",
+                "price":4350.42
+            },
+            {
+                "name":"nunc purus phasellus in",
+                "price":1677.28
+            },
+            {
+                "name":"orci",
+                "price":798.56
+            },
+            {
+                "name":"orci luctus",
+                "price":5521.37
+            },
+            {
+                "name":"quis tortor id nulla ultrices",
+                "price":8782.75
+            },
+            {
+                "name":"luctus tincidunt",
+                "price":9311.90
+            },
+            {
+                "name":"porta",
+                "price":8478.93
+            },
+            {
+                "name":"donec",
+                "price":923.60
+            },
+            {
+                "name":"vestibulum eget vulputate ut ultrices",
+                "price":5576.89
+            },
+            {
+                "name":"tempor convallis nulla neque libero",
+                "price":4285.26
+            },
+            {
+                "name":"quis turpis sed ante",
+                "price":6937.72
+            },
+            {
+                "name":"rutrum nulla",
+                "price":356.75
+            },
+            {
+                "name":"nonummy",
+                "price":9731.45
+            },
+            {
+                "name":"pellentesque viverra pede ac diam",
+                "price":6784.87
+            },
+            {
+                "name":"quisque id justo",
+                "price":3412.47
+            },
+            {
+                "name":"quam fringilla rhoncus mauris",
+                "price":6707.55
+            },
+            {
+                "name":"facilisi cras",
+                "price":2774.23
+            },
+            {
+                "name":"ante ipsum primis in faucibus",
+                "price":528.55
+            },
+            {
+                "name":"risus dapibus augue",
+                "price":494.77
+            },
+            {
+                "name":"nulla mollis molestie lorem",
+                "price":9677.30
+            }
+        ]
+    },
+    {
+        "type":"bestPrices",
+        "title":"Лучшная цена",
+        "items":[
+            {
+                "name":"vestibulum sed magna at",
+                "price":9340.51
+            },
+            {
+                "name":"ultrices enim lorem",
+                "price":5843.02
+            },
+            {
+                "name":"at vulputate vitae nisl aenean",
+                "price":4075.63
+            },
+            {
+                "name":"ut suscipit a",
+                "price":6054.48
+            },
+            {
+                "name":"cubilia curae mauris viverra diam",
+                "price":8104.81
+            },
+            {
+                "name":"at dolor quis odio",
+                "price":4005.93
+            },
+            {
+                "name":"pede morbi porttitor lorem",
+                "price":1928.82
+            },
+            {
+                "name":"at velit",
+                "price":4606.90
+            },
+            {
+                "name":"mauris enim leo",
+                "price":8557.38
+            },
+            {
+                "name":"at nibh in",
+                "price":9344.12
+            },
+            {
+                "name":"vestibulum rutrum rutrum neque aenean",
+                "price":5442.89
+            },
+            {
+                "name":"purus aliquet at feugiat",
+                "price":2224.69
+            },
+            {
+                "name":"id turpis integer aliquet",
+                "price":9861.09
+            },
+            {
+                "name":"vel augue vestibulum",
+                "price":6096.02
+            },
+            {
+                "name":"posuere felis sed",
+                "price":4392.64
+            },
+            {
+                "name":"sed interdum venenatis turpis enim",
+                "price":1758.37
+            },
+            {
+                "name":"ante ipsum primis in",
+                "price":4309.04
+            },
+            {
+                "name":"molestie",
+                "price":4619.80
+            },
+            {
+                "name":"quisque erat",
+                "price":1373.58
+            },
+            {
+                "name":"lacinia erat",
+                "price":73.22
+            },
+            {
+                "name":"nulla",
+                "price":8722.68
+            },
+            {
+                "name":"iaculis",
+                "price":2436.45
+            }
+        ]
+    }
+]
