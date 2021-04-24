@@ -56,7 +56,7 @@ class MainController: UIViewController {
     }
     
     private func addQRCodeButton() {
-        let button = ScanQRButton(frame: .init(x: 0, y: 0, width: 45, height: 45))
+        let button = ScanQRButton(frame: .init(x: 0, y: 0, width: 40, height: 40))
         let barButtonItem = UIBarButtonItem(customView: button)
         self.navigationItem.setRightBarButton(barButtonItem, animated: true)
     }
@@ -70,7 +70,6 @@ class MainController: UIViewController {
         collectionView.backgroundColor = .white
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
-//        collectionView.delegate = self
         collectionView.dataSource = self
     }
     
@@ -157,7 +156,17 @@ extension MainController: UICollectionViewDataSource {
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCell.reuseID, for: indexPath) as! ProductCell
             cell.productNameLabel.text = sections[indexPath.section].items?[indexPath.item].name
-            cell.productPriceLabel.text = (sections[indexPath.section].items?[indexPath.item].price?.toString())
+            
+//MARK: Add units to priceLabel
+//            Хотел перенести данный блок кода в класс ячейки, где ему и место, но при вызове его из инициализатора ячейки данные из модели еще не доступны и возвращается nil. в дальнейшем попробую решить эту проблему, чтобы сделать код более чистым.
+            let data = sections[indexPath.section].items?[indexPath.item].price?.toString()
+            let priceAttribute = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18, weight: .bold), NSAttributedString.Key.foregroundColor : UIColor.black]
+            let unitAttribute = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 12, weight: .bold), NSAttributedString.Key.foregroundColor : UIColor.black]
+            let prices = NSMutableAttributedString(string: "\(data ?? "the data has not been fetched yet")", attributes: priceAttribute)
+                let units = NSMutableAttributedString(string: " ₽/шт.", attributes: unitAttribute)
+                prices.append(units)
+            cell.productPriceLabel.attributedText = prices
+            
             cell.cacheImage(with: sections[indexPath.section])
             return cell
         }

@@ -29,7 +29,6 @@ class CategoryCell: UICollectionViewCell {
         title.adjustsFontSizeToFitWidth = true
         title.numberOfLines = 0
         title.textAlignment = .left
-//        title.lineBreakMode = NSLineBreakMode(rawValue: 1) ?? NSLineBreakMode(rawValue: 0)!
         return title
     }()
     

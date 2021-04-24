@@ -10,8 +10,4 @@ extension Double {
     func toString() -> String {
         return String(format: "%.2f",self)
     }
-    
-//    func addCurrency() -> String {
-//        return String(format: "%.2f ₽/шт", self)
-//    }
 }

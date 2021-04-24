@@ -13,7 +13,7 @@ class ScanQRButton: UIButton {
         super.init(frame: frame)
         backgroundColor = .white
         layer.cornerRadius = 4
-//        clipsToBounds = false
+        clipsToBounds = true
         tintColor = .black
         setImage()
     }
