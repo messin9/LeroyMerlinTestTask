@@ -80,15 +80,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B5548CA2262F010200D3FC40 /* Controller */ = {
+		B5548CA2262F010200D3FC40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B5548CEE2634139200D3FC40 /* Navigation Controller items */,
 				B57B44ED262A2D6300D40D41 /* MainController.swift */,
+				B5548CEE2634139200D3FC40 /* NavigationItems */,
 				B5548CC4262F3D9400D3FC40 /* CollectionViewCells */,
 				B5548CA3262F011700D3FC40 /* TabBarControllers */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B5548CA3262F011700D3FC40 /* TabBarControllers */ = {
@@ -115,19 +115,38 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
-		B5548CEE2634139200D3FC40 /* Navigation Controller items */ = {
+		B5548CEE2634139200D3FC40 /* NavigationItems */ = {
 			isa = PBXGroup;
 			children = (
 				B5548CEF263413D900D3FC40 /* ScanQRButton.swift */,
 			);
-			path = "Navigation Controller items";
+			path = NavigationItems;
+			sourceTree = "<group>";
+		};
+		B5548CF42634392400D3FC40 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				B57B44E9262A2D6300D40D41 /* AppDelegate.swift */,
+				B57B44EB262A2D6300D40D41 /* SceneDelegate.swift */,
+				B57B44F5262A2D6600D40D41 /* Assets.xcassets */,
+				B57B44FA262A2D6600D40D41 /* Info.plist */,
+				B57B44F2262A2D6300D40D41 /* LeroyMerlinUITestTask.xcdatamodeld */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		B5548CF52634399100D3FC40 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B57B44EF262A2D6300D40D41 /* Main.storyboard */,
+				B57B44F7262A2D6600D40D41 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		B57B44DD262A2D6300D40D41 = {
 			isa = PBXGroup;
 			children = (
-				B5548CA2262F010200D3FC40 /* Controller */,
-				B5548C8E262DBDB700D3FC40 /* model.json */,
 				B57B44E8262A2D6300D40D41 /* LeroyMerlinUITestTask */,
 				B57B44E7262A2D6300D40D41 /* Products */,
 			);
@@ -144,15 +163,11 @@
 		B57B44E8262A2D6300D40D41 /* LeroyMerlinUITestTask */ = {
 			isa = PBXGroup;
 			children = (
-				B5548C94262DD13200D3FC40 /* Extensions */,
 				B57B4501262A2DAC00D40D41 /* Model */,
-				B57B44E9262A2D6300D40D41 /* AppDelegate.swift */,
-				B57B44EB262A2D6300D40D41 /* SceneDelegate.swift */,
-				B57B44EF262A2D6300D40D41 /* Main.storyboard */,
-				B57B44F5262A2D6600D40D41 /* Assets.xcassets */,
-				B57B44F7262A2D6600D40D41 /* LaunchScreen.storyboard */,
-				B57B44FA262A2D6600D40D41 /* Info.plist */,
-				B57B44F2262A2D6300D40D41 /* LeroyMerlinUITestTask.xcdatamodeld */,
+				B5548CA2262F010200D3FC40 /* Controllers */,
+				B5548CF52634399100D3FC40 /* Storyboards */,
+				B5548C94262DD13200D3FC40 /* Extensions */,
+				B5548C8E262DBDB700D3FC40 /* model.json */,
 			);
 			path = LeroyMerlinUITestTask;
 			sourceTree = "<group>";
@@ -162,6 +177,7 @@
 			children = (
 				B57B4502262A2DCE00D40D41 /* SectionModel.swift */,
 				B57B4507262A2E7600D40D41 /* ProductModel.swift */,
+				B5548CF42634392400D3FC40 /* Supporting files */,
 			);
 			path = Model;
 			sourceTree = "<group>";
