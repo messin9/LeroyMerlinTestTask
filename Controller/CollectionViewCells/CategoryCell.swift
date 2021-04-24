@@ -12,7 +12,7 @@ class CategoryCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .secondarySystemBackground
+        backgroundColor = #colorLiteral(red: 0.9403653434, green: 0.9342451484, blue: 0.9532025206, alpha: 1)
         layer.cornerRadius = 4
         clipsToBounds = true
         setupConstraints()
@@ -26,7 +26,6 @@ class CategoryCell: UICollectionViewCell {
         let title = UILabel()
         title.textColor = .black
         title.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
-        title.numberOfLines = 0
         title.adjustsFontSizeToFitWidth = true
         title.numberOfLines = 0
         title.textAlignment = .left

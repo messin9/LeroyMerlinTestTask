@@ -12,7 +12,7 @@ class AllCategoriesCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .secondarySystemBackground
+        backgroundColor = #colorLiteral(red: 0.9403653434, green: 0.9342451484, blue: 0.9532025206, alpha: 1)
         layer.cornerRadius = 4
         clipsToBounds = true
         setupConstraints()

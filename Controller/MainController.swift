@@ -9,30 +9,21 @@ import UIKit
 
 class MainController: UIViewController {
     
+//    MARK: Outlets
     let sections = Bundle.main.decode([SectionModel].self, from: "model.json")
     var collectionView: UICollectionView!
     
-    func setupCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: setupCollectionViewLayout() )
-        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.addSubview(collectionView)
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
-        collectionView.backgroundColor = .white
-        collectionView.showsVerticalScrollIndicator = false
-        collectionView.showsHorizontalScrollIndicator = false
-        collectionView.delegate = self
-        collectionView.dataSource = self
-    }
-
+//    MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
         registerCells()
         setupNavigationBar()
         addSearchController()
-
+        addQRCodeButton()
     }
     
+//    MARK: Configuring NavBar
     private func setupNavigationBar() {
         navigationController?.navigationBar.barTintColor = .systemGreen
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -63,7 +54,26 @@ class MainController: UIViewController {
         searchController.searchBar.searchTextField.leftView = nil
         navigationItem.searchController = searchController
     }
-        
+    
+    private func addQRCodeButton() {
+        let button = ScanQRButton(frame: .init(x: 0, y: 0, width: 45, height: 45))
+        let barButtonItem = UIBarButtonItem(customView: button)
+        self.navigationItem.setRightBarButton(barButtonItem, animated: true)
+    }
+    
+//    MARK: Configuring CollectionView
+    private func setupCollectionView() {
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: setupCollectionViewLayout() )
+        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(collectionView)
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
+        collectionView.backgroundColor = .white
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.showsHorizontalScrollIndicator = false
+//        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+    
     private func setupCollectionViewLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex, layoutEnvironment ) -> NSCollectionLayoutSection? in
             let section = self.sections[sectionIndex]
@@ -119,10 +129,8 @@ class MainController: UIViewController {
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: "header", withReuseIdentifier: SectionHeader.reuseID)}
             
 }
-
-
-
-extension MainController: UICollectionViewDataSource, UICollectionViewDelegate {
+//MARK: UICollectionViewDataSource
+extension MainController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return sections.count

@@ -33,7 +33,9 @@ class CatalogCell: UICollectionViewCell {
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .center
-        imageView.image = #imageLiteral(resourceName: "catalog")
+        let configuration = UIImage.SymbolConfiguration(pointSize: 36)
+        imageView.image = UIImage(systemName: "list.bullet", withConfiguration: configuration)
+        imageView.tintColor = .white
         return imageView
     }()
     

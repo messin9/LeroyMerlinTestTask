@@ -20,6 +20,7 @@
 		B5548CD0262F7B4300D3FC40 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5548CCF262F7B4300D3FC40 /* ProductCell.swift */; };
 		B5548CD32630A15300D3FC40 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5548CD22630A15300D3FC40 /* SectionHeader.swift */; };
 		B5548CD62631921900D3FC40 /* Double + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5548CD52631921900D3FC40 /* Double + Extension.swift */; };
+		B5548CF0263413D900D3FC40 /* ScanQRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5548CEF263413D900D3FC40 /* ScanQRButton.swift */; };
 		B57B44EA262A2D6300D40D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B44E9262A2D6300D40D41 /* AppDelegate.swift */; };
 		B57B44EC262A2D6300D40D41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B44EB262A2D6300D40D41 /* SceneDelegate.swift */; };
 		B57B44EE262A2D6300D40D41 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B44ED262A2D6300D40D41 /* MainController.swift */; };
@@ -45,6 +46,7 @@
 		B5548CCF262F7B4300D3FC40 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		B5548CD22630A15300D3FC40 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		B5548CD52631921900D3FC40 /* Double + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double + Extension.swift"; sourceTree = "<group>"; };
+		B5548CEF263413D900D3FC40 /* ScanQRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRButton.swift; sourceTree = "<group>"; };
 		B57B44E6262A2D6300D40D41 /* LeroyMerlinUITestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeroyMerlinUITestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57B44E9262A2D6300D40D41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B57B44EB262A2D6300D40D41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		B5548CA2262F010200D3FC40 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B5548CEE2634139200D3FC40 /* Navigation Controller items */,
 				B57B44ED262A2D6300D40D41 /* MainController.swift */,
 				B5548CC4262F3D9400D3FC40 /* CollectionViewCells */,
 				B5548CA3262F011700D3FC40 /* TabBarControllers */,
@@ -110,6 +113,14 @@
 				B5548CD22630A15300D3FC40 /* SectionHeader.swift */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		B5548CEE2634139200D3FC40 /* Navigation Controller items */ = {
+			isa = PBXGroup;
+			children = (
+				B5548CEF263413D900D3FC40 /* ScanQRButton.swift */,
+			);
+			path = "Navigation Controller items";
 			sourceTree = "<group>";
 		};
 		B57B44DD262A2D6300D40D41 = {
@@ -238,6 +249,7 @@
 				B5548CB0262F045200D3FC40 /* ShopsController.swift in Sources */,
 				B57B44F4262A2D6300D40D41 /* LeroyMerlinUITestTask.xcdatamodeld in Sources */,
 				B5548CCD262F7B1A00D3FC40 /* AllCategoriesCell.swift in Sources */,
+				B5548CF0263413D900D3FC40 /* ScanQRButton.swift in Sources */,
 				B5548CB3262F046800D3FC40 /* ProfileController.swift in Sources */,
 				B5548CD32630A15300D3FC40 /* SectionHeader.swift in Sources */,
 				B57B44EA262A2D6300D40D41 /* AppDelegate.swift in Sources */,
